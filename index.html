@@ -62,29 +62,80 @@
       }
     </style>
   </head>
-  <body
-    class="font-monrope max-w-[1440px] mx-5 lg:mx-auto border-4 border-amber-500"
-  >
-    <header class="max-w-[1170px] mx-auto border-4 border-green-500">
-      <nav></nav>
+  <body class="font-monrope max-w-[1440px] mx-5 lg:mx-auto">
+    <header class="max-w-[1170px] mx-auto pt-[54px]">
+      <nav>
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li class="text-[#FF4240] font-bold"><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Pages</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+            <a class="text-2xl lg:text-4xl font-extrabold cursor-pointer"
+              >Hockey<span class="text-[#FF4240]">’</span>s</a
+            >
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li class="text-[#FF4240] font-bold"><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <i
+              class="fa-solid fa-magnifying-glass text-[#89898B] mr-6 hidden lg:block"
+            ></i>
+            <button
+              class="btn btn-xs sm:btn-sm md:btn-md lg:btn-md text-white bg-button-color border-none"
+            >
+              Get Ticket
+            </button>
+          </div>
+        </div>
+      </nav>
       <!-- hero section -->
-      <div
-        class="relative h-[200px] lg:h-[550px] mt-14 border-2 border-red-600"
-      >
+      <div class="relative h-[200px] lg:h-[550px] mt-14">
         <div class="carousel w-full h-full">
           <div id="slide1" class="carousel-item relative w-full">
             <img src="./Images/1.png" class="w-full" />
             <div
-              class="absolute flex gap-4 transform -translate-y-1/2 left-8 right-5 bottom-8"
+              class="absolute flex gap-4 transform -translate-y-1/2 left-[33%] bottom-0 md:left-8 md:right-5 lg:left-8 lg:right-5 lg:bottom-8"
             >
               <a
                 href="#slide3"
-                class="btn btn-circle bg-title-color text-white bg-title-color bg-title-color border-none"
+                class="btn btn-circle text-white bg-title-color bg-title-color border-none"
                 >❮</a
               >
               <a
                 href="#slide2"
-                class="btn btn-circle bg-title-color bg-title-color text-white border-none"
+                class="btn btn-circle bg-title-color text-white border-none"
                 >❯</a
               >
             </div>
@@ -101,7 +152,7 @@
               >
               <a
                 href="#slide3"
-                class="btn btn-circle bg-title-colorbg-title-color text-white border-none"
+                class="btn btn-circle bg-title-color bg-title-color text-white border-none"
                 >❯</a
               >
             </div>
@@ -113,12 +164,12 @@
             >
               <a
                 href="#slide2"
-                class="btn btn-circle bg-title-color bg-title-color border-none"
+                class="btn btn-circle bg-title-color text-white border-none"
                 >❮</a
               >
               <a
                 href="#slide1"
-                class="btn btn-circle bg-title-color text-white bg-title-color border-none"
+                class="btn btn-circle text-white bg-title-color border-none"
                 >❯</a
               >
             </div>
@@ -140,7 +191,7 @@
         </div>
       </div>
     </header>
-    <main class="max-w-[1170px] mx-auto border-4 border-red-500">
+    <main class="max-w-[1170px] mx-auto">
       <!-- professional hockyes club section -->
       <section class="mt-60 md:mt-40 lg:mt-24">
         <hr />
@@ -697,7 +748,8 @@
               <img src="./Images/g-1.png" alt="" />
               <p class="text-[#0D0D1266] pt-6">
                 Phone Number : <br />
-                <span class="text-title-color text-[18px] font-extrabold"
+                <span
+                  class="text-title-color text-sm lg:text-[18px] font-extrabold"
                   >(+62) 123-321-543</span
                 >
               </p>
@@ -708,7 +760,8 @@
               <p class="text-[#0D0D1266] pt-6">
                 Email :
                 <br />
-                <span class="text-title-color text-[18px] font-extrabold"
+                <span
+                  class="text-title-color text-sm lg:text-[18px] font-extrabold"
                   >hockeys@support.com</span
                 >
               </p>
@@ -718,7 +771,9 @@
               <img src="./Images//g-3.png" alt="" />
               <p class="text-[#0D0D1266] pt-6">
                 Location : <br />
-                <span class="text-title-color text-[18px] font-extrabold">
+                <span
+                  class="text-title-color text-sm lg:text-[18px] font-extrabold"
+                >
                   152/1 Mohakhali Wireless Gate</span
                 >
               </p>
@@ -792,7 +847,7 @@
             <h3 class="text-2xl font-extrabold text-center text-title-color">
               Social Media
             </h3>
-            <div class="flex justify-center gap-4 text-xl mt-6">
+            <div class="flex justify-center gap-6 text-3xl mt-6">
               <i class="fa-brands fa-twitter"></i>
               <i class="fa-brands fa-facebook"></i>
               <i class="fa-brands fa-instagram"></i>
